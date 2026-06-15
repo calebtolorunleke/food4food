@@ -1,11 +1,11 @@
 import React from "react";
 import FoodItem from "./FoodItem";
 
-const FoodList = ({ foodData }) => {
+const FoodList = ({ foodData, setFoodId }) => {
   return (
     <div>
       {foodData.map((item) => (
-        <FoodItem key={item.id} item={item} />
+        <FoodItem setFoodId={setFoodId} key={item.id} item={item} />
       ))}
     </div>
   );

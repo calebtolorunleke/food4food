@@ -8,8 +8,9 @@ import InnerContainer from "./components/InnerContainer";
 import FoodDetails from "./components/FoodDetails";
 
 const App = () => {
+  const [food, setFood] = useState("");
   const [foodData, setFoodData] = useState([]);
-  const [foodId, setFoodId] = useState("");
+  const [foodId, setFoodId] = useState("656329");
 
   return (
     <div>
